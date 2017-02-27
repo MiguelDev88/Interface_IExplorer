@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IExplorer
+namespace IExplorer_Datos
 {
-    public partial class frmIExplorer : Form
+    public partial class Form1 : Form
     {
-        public frmIExplorer()
+        public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pbStorage.ForeColor = Color.Aqua;
+            pbStorage.Increment(100);
         }
     }
 }

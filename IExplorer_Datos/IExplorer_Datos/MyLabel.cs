@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IExplorer
+namespace IExplorer_Datos
 {
-    public partial class IExplorer_Data : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public IExplorer_Data()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        public void setIncrement (int increment)
-        {
-            pbStorage.Increment(increment);
         }
     }
 }
