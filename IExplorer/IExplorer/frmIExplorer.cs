@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IExplorer
 {
-    public partial class Form1 : Form
+    public partial class frmIExplorer : Form
     {
-        public Form1()
+        public frmIExplorer()
         {
             InitializeComponent();
         }

@@ -1,25 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IExplorer_Datos
+namespace IExplorer
 {
-    public partial class Form1 : Form
+    public partial class IExplorer_Data : UserControl
     {
-        public Form1()
+        public IExplorer_Data()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void setIncrement (int increment)
         {
-
+            pbStorage.Increment(increment);
         }
     }
 }
