@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IExplorer_Datos">
+      <HintPath>..\..\IExplorer_Datos\IExplorer_Datos\bin\Debug\IExplorer_Datos.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
