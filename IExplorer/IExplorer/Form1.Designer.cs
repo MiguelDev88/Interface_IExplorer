@@ -28,354 +28,399 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Media", 6, 6);
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Apps", 0, 0);
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Backups", 2, 2);
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Media Library", 1, 1);
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Photos", 4, 4);
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Bookmarks", 3, 3);
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Phone", 5, 5, new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnMusic = new System.Windows.Forms.Button();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.treeNavigator = new System.Windows.Forms.TreeView();
+            this.iconosTreeview = new System.Windows.Forms.ImageList(this.components);
             this.iexplorerDatos1 = new IExplorer_Datos.IexplorerDatos();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.btnMessages = new System.Windows.Forms.Button();
-            this.btnNotes = new System.Windows.Forms.Button();
-            this.btnMediaFolder = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnMountDevice = new System.Windows.Forms.Button();
-            this.panelButtons = new System.Windows.Forms.Panel();
+            this.cbPhonePath = new System.Windows.Forms.ToolStripComboBox();
+            this.cbMenu = new System.Windows.Forms.ToolStripComboBox();
+            this.tvSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnFilesCat = new System.Windows.Forms.Button();
+            this.btnDataCat = new System.Windows.Forms.Button();
+            this.btnMediaCat = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnUndo = new System.Windows.Forms.ToolStripButton();
+            this.btnRedo = new System.Windows.Forms.ToolStripButton();
+            this.lbSearch = new System.Windows.Forms.ToolStripLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
-            this.panelButtons.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnMusic
+            // treeNavigator
             // 
-            this.btnMusic.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMusic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusic.Location = new System.Drawing.Point(12, 14);
-            this.btnMusic.Name = "btnMusic";
-            this.btnMusic.Size = new System.Drawing.Size(216, 44);
-            this.btnMusic.TabIndex = 0;
-            this.btnMusic.Text = "MUSIC";
-            this.btnMusic.UseVisualStyleBackColor = true;
+            this.treeNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeNavigator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.treeNavigator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeNavigator.ForeColor = System.Drawing.Color.White;
+            this.treeNavigator.ImageIndex = 0;
+            this.treeNavigator.ImageList = this.iconosTreeview;
+            this.treeNavigator.Location = new System.Drawing.Point(8, 57);
+            this.treeNavigator.Margin = new System.Windows.Forms.Padding(0);
+            this.treeNavigator.Name = "treeNavigator";
+            treeNode1.ImageIndex = 6;
+            treeNode1.Name = "nodeMedia";
+            treeNode1.SelectedImageIndex = 6;
+            treeNode1.Text = "Media";
+            treeNode2.ImageIndex = 0;
+            treeNode2.Name = "nodeApps";
+            treeNode2.SelectedImageIndex = 0;
+            treeNode2.Text = "Apps";
+            treeNode3.ImageIndex = 2;
+            treeNode3.Name = "nodeBackups";
+            treeNode3.SelectedImageIndex = 2;
+            treeNode3.Text = "Backups";
+            treeNode4.ImageIndex = 1;
+            treeNode4.Name = "nodeLibrary";
+            treeNode4.SelectedImageIndex = 1;
+            treeNode4.Text = "Media Library";
+            treeNode5.ImageIndex = 4;
+            treeNode5.Name = "nodePhotos";
+            treeNode5.SelectedImageIndex = 4;
+            treeNode5.Text = "Photos";
+            treeNode6.ImageIndex = 3;
+            treeNode6.Name = "nodeBookmarks";
+            treeNode6.SelectedImageIndex = 3;
+            treeNode6.Text = "Bookmarks";
+            treeNode7.Checked = true;
+            treeNode7.ImageIndex = 5;
+            treeNode7.Name = "nodeRoot";
+            treeNode7.SelectedImageIndex = 5;
+            treeNode7.Text = "Phone";
+            this.treeNavigator.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode7});
+            this.treeNavigator.SelectedImageIndex = 0;
+            this.treeNavigator.Size = new System.Drawing.Size(221, 514);
+            this.treeNavigator.TabIndex = 1;
             // 
-            // treeView1
+            // iconosTreeview
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 37);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(221, 560);
-            this.treeView1.TabIndex = 1;
+            this.iconosTreeview.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconosTreeview.ImageStream")));
+            this.iconosTreeview.TransparentColor = System.Drawing.Color.Transparent;
+            this.iconosTreeview.Images.SetKeyName(0, "compas-de-dibujo.png");
+            this.iconosTreeview.Images.SetKeyName(1, "contorno-de-corchea.png");
+            this.iconosTreeview.Images.SetKeyName(2, "deshacer-flecha.png");
+            this.iconosTreeview.Images.SetKeyName(3, "estrella.png");
+            this.iconosTreeview.Images.SetKeyName(4, "imagen.png");
+            this.iconosTreeview.Images.SetKeyName(5, "llamada-smartphone .png");
+            this.iconosTreeview.Images.SetKeyName(6, "silueta-del-icono-de-hogar.png");
             // 
             // iexplorerDatos1
             // 
-            this.iexplorerDatos1.Location = new System.Drawing.Point(353, 37);
+            this.iexplorerDatos1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iexplorerDatos1.Location = new System.Drawing.Point(203, 20);
             this.iexplorerDatos1.Name = "iexplorerDatos1";
             this.iexplorerDatos1.Size = new System.Drawing.Size(379, 212);
             this.iexplorerDatos1.TabIndex = 2;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
+            this.btnUndo,
+            this.btnRedo,
             this.toolStripSeparator1,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton5,
-            this.toolStripButton6});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.cbPhonePath,
+            this.cbMenu,
+            this.lbSearch,
+            this.tvSearch});
+            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(961, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(969, 25);
+            this.toolStrip1.Stretch = true;
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStrip1.Resize += new System.EventHandler(this.toolStrip1_Resize);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripButton3
+            // cbPhonePath
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.cbPhonePath.AutoSize = false;
+            this.cbPhonePath.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.cbPhonePath.Name = "cbPhonePath";
+            this.cbPhonePath.Size = new System.Drawing.Size(100, 23);
             // 
-            // toolStripButton4
+            // cbMenu
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton4.Text = "toolStripButton4";
+            this.cbMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.cbMenu.AutoSize = false;
+            this.cbMenu.Margin = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.cbMenu.Name = "cbMenu";
+            this.cbMenu.Size = new System.Drawing.Size(30, 23);
             // 
-            // toolStripButton5
+            // tvSearch
             // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton5.Text = "toolStripButton5";
+            this.tvSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tvSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.tvSearch.Name = "tvSearch";
+            this.tvSearch.Size = new System.Drawing.Size(250, 25);
+            this.tvSearch.Text = "asdasd";
+            this.tvSearch.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // toolStripButton6
+            // menuStrip1
             // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton6.Text = "toolStripButton6";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(969, 24);
+            this.menuStrip1.TabIndex = 25;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnMessages
+            // fileToolStripMenuItem
             // 
-            this.btnMessages.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMessages.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMessages.Location = new System.Drawing.Point(12, 64);
-            this.btnMessages.Name = "btnMessages";
-            this.btnMessages.Size = new System.Drawing.Size(216, 44);
-            this.btnMessages.TabIndex = 4;
-            this.btnMessages.Text = "MESSAGES";
-            this.btnMessages.UseVisualStyleBackColor = true;
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadDataToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
             // 
-            // btnNotes
+            // loadDataToolStripMenuItem
             // 
-            this.btnNotes.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnNotes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotes.Location = new System.Drawing.Point(12, 114);
-            this.btnNotes.Name = "btnNotes";
-            this.btnNotes.Size = new System.Drawing.Size(216, 44);
-            this.btnNotes.TabIndex = 5;
-            this.btnNotes.Text = "NOTES";
-            this.btnNotes.UseVisualStyleBackColor = true;
+            this.loadDataToolStripMenuItem.Name = "loadDataToolStripMenuItem";
+            this.loadDataToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.loadDataToolStripMenuItem.Text = "&Load Data";
             // 
-            // btnMediaFolder
+            // helpToolStripMenuItem
             // 
-            this.btnMediaFolder.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMediaFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMediaFolder.Location = new System.Drawing.Point(12, 164);
-            this.btnMediaFolder.Name = "btnMediaFolder";
-            this.btnMediaFolder.Size = new System.Drawing.Size(216, 44);
-            this.btnMediaFolder.TabIndex = 6;
-            this.btnMediaFolder.Text = "MEDIA FOLDER";
-            this.btnMediaFolder.UseVisualStyleBackColor = true;
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.languageToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // button4
+            // languageToolStripMenuItem
             // 
-            this.button4.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(234, 164);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(216, 44);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "APPS";
-            this.button4.UseVisualStyleBackColor = true;
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.languageToolStripMenuItem.Text = "&Language";
             // 
-            // button5
+            // panel2
             // 
-            this.button5.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(234, 114);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(216, 44);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "SAFARI";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(234, 64);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(216, 44);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "CONTACTS";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(234, 14);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(216, 44);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "AUTO TRANSFER";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(234, 214);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 44);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "IEXPLORER MOBILE";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnMountDevice
-            // 
-            this.btnMountDevice.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMountDevice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMountDevice.Location = new System.Drawing.Point(12, 214);
-            this.btnMountDevice.Name = "btnMountDevice";
-            this.btnMountDevice.Size = new System.Drawing.Size(216, 44);
-            this.btnMountDevice.TabIndex = 19;
-            this.btnMountDevice.Text = "MOUNT DEVICE";
-            this.btnMountDevice.UseVisualStyleBackColor = true;
-            // 
-            // panelButtons
-            // 
-            this.panelButtons.Controls.Add(this.button7);
-            this.panelButtons.Controls.Add(this.button3);
-            this.panelButtons.Controls.Add(this.btnMusic);
-            this.panelButtons.Controls.Add(this.btnMountDevice);
-            this.panelButtons.Controls.Add(this.btnMessages);
-            this.panelButtons.Controls.Add(this.button4);
-            this.panelButtons.Controls.Add(this.btnNotes);
-            this.panelButtons.Controls.Add(this.button5);
-            this.panelButtons.Controls.Add(this.btnMediaFolder);
-            this.panelButtons.Controls.Add(this.button6);
-            this.panelButtons.Location = new System.Drawing.Point(249, 330);
-            this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(483, 267);
-            this.panelButtons.TabIndex = 23;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.iexplorerDatos1);
+            this.panel2.Location = new System.Drawing.Point(232, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(738, 515);
+            this.panel2.TabIndex = 27;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(233, 318);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Location = new System.Drawing.Point(-8, 238);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(719, 48);
-            this.panel1.TabIndex = 24;
+            this.panel1.Size = new System.Drawing.Size(747, 47);
+            this.panel1.TabIndex = 3;
             // 
-            // button1
+            // statusStrip1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "MUSIC";
-            this.button1.UseVisualStyleBackColor = true;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 579);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(969, 22);
+            this.statusStrip1.TabIndex = 28;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // button2
+            // toolStripStatusLabel1
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(225, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "MUSIC";
-            this.button2.UseVisualStyleBackColor = true;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // button8
+            // btnFilesCat
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(447, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 44);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "MUSIC";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnFilesCat.BackColor = System.Drawing.Color.White;
+            this.btnFilesCat.FlatAppearance.BorderSize = 0;
+            this.btnFilesCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilesCat.Image = global::IExplorer.Properties.Resources.carpeta;
+            this.btnFilesCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFilesCat.Location = new System.Drawing.Point(224, 0);
+            this.btnFilesCat.Name = "btnFilesCat";
+            this.btnFilesCat.Size = new System.Drawing.Size(111, 37);
+            this.btnFilesCat.TabIndex = 2;
+            this.btnFilesCat.Text = "        Files";
+            this.btnFilesCat.UseVisualStyleBackColor = false;
+            // 
+            // btnDataCat
+            // 
+            this.btnDataCat.BackColor = System.Drawing.Color.White;
+            this.btnDataCat.FlatAppearance.BorderSize = 0;
+            this.btnDataCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataCat.Image = global::IExplorer.Properties.Resources.la_computacion_en_nube__1_;
+            this.btnDataCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDataCat.Location = new System.Drawing.Point(112, 0);
+            this.btnDataCat.Name = "btnDataCat";
+            this.btnDataCat.Size = new System.Drawing.Size(111, 37);
+            this.btnDataCat.TabIndex = 1;
+            this.btnDataCat.Text = "       Data";
+            this.btnDataCat.UseVisualStyleBackColor = false;
+            // 
+            // btnMediaCat
+            // 
+            this.btnMediaCat.BackColor = System.Drawing.Color.White;
+            this.btnMediaCat.FlatAppearance.BorderSize = 0;
+            this.btnMediaCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaCat.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
+            this.btnMediaCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMediaCat.Location = new System.Drawing.Point(0, 0);
+            this.btnMediaCat.Name = "btnMediaCat";
+            this.btnMediaCat.Size = new System.Drawing.Size(111, 37);
+            this.btnMediaCat.TabIndex = 0;
+            this.btnMediaCat.Text = "        Media";
+            this.btnMediaCat.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(66, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnUndo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccionmirror;
+            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUndo.Margin = new System.Windows.Forms.Padding(6, 1, 0, 2);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(23, 22);
+            this.btnUndo.Text = "toolStripButton1";
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRedo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccion;
+            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Size = new System.Drawing.Size(23, 22);
+            this.btnRedo.Text = "toolStripButton2";
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.lbSearch.AutoSize = false;
+            this.lbSearch.Image = global::IExplorer.Properties.Resources.busqueda;
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(22, 22);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.btnDataCat);
+            this.panel3.Controls.Add(this.btnFilesCat);
+            this.panel3.Controls.Add(this.btnMediaCat);
+            this.panel3.Location = new System.Drawing.Point(237, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(338, 38);
+            this.panel3.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 802);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelButtons);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(969, 601);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.iexplorerDatos1);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.treeNavigator);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.panelButtons.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnMusic;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView treeNavigator;
         private IExplorer_Datos.IexplorerDatos iexplorerDatos1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton btnUndo;
+        private System.Windows.Forms.ToolStripButton btnRedo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.Button btnMessages;
-        private System.Windows.Forms.Button btnNotes;
-        private System.Windows.Forms.Button btnMediaFolder;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnMountDevice;
-        private System.Windows.Forms.Panel panelButtons;
+        private System.Windows.Forms.ToolStripComboBox cbPhonePath;
+        private System.Windows.Forms.ToolStripComboBox cbMenu;
+        private System.Windows.Forms.ToolStripTextBox tvSearch;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripLabel lbSearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMediaCat;
+        private System.Windows.Forms.Button btnFilesCat;
+        private System.Windows.Forms.Button btnDataCat;
+        private System.Windows.Forms.ImageList iconosTreeview;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

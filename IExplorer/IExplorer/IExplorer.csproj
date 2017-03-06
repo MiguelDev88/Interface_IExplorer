@@ -86,6 +86,54 @@
   <ItemGroup>
     <None Include="Resources\reproductor-de-musica.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-reproduccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-reproduccionmirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la-computacion-en-nube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la-computacion-en-nube %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung1ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compas-de-dibujo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contorno-de-corchea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deshacer-flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llamada-smartphone .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silueta-del-icono-de-hogar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono-inteligente %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

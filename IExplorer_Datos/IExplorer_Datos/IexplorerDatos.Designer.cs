@@ -187,6 +187,7 @@
             this.pbPhone.Location = new System.Drawing.Point(3, 3);
             this.pbPhone.Name = "pbPhone";
             this.pbPhone.Size = new System.Drawing.Size(77, 142);
+            this.pbPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPhone.TabIndex = 15;
             this.pbPhone.TabStop = false;
             // 
