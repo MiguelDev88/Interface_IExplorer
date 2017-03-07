@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <number>123123123</number>
+  <model>iphone</model>
+  <name>Pedro's phone</name>
+  <storage>500</storage>
+  <storageUsed>55.6</storageUsed>
+  <serialNum>123456879</serialNum>
+  <firmVersion>133333333</firmVersion>
+  <softVersion>443.5455,4312</softVersion>
+  <files>
+    <string>ole123123</string>
+    <string>ole2</string>
+	<string>ole123123</string>
+    <string>ole2</string>
+	<string>ole123123</string>
+    <string>ole2</string>
+	<string>ole123123</string>
+    <string>ole2</string>
+  </files>
+</Phone>

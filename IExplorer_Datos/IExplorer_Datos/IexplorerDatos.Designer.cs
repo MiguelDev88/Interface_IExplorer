@@ -52,9 +52,9 @@
             this.lbNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNumber.Location = new System.Drawing.Point(242, 120);
             this.lbNumber.Name = "lbNumber";
-            this.lbNumber.Size = new System.Drawing.Size(116, 17);
+            this.lbNumber.Size = new System.Drawing.Size(12, 17);
             this.lbNumber.TabIndex = 29;
-            this.lbNumber.Text = "+34 111 222 333";
+            this.lbNumber.Text = " ";
             // 
             // lbSerial
             // 
@@ -62,9 +62,9 @@
             this.lbSerial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSerial.Location = new System.Drawing.Point(242, 101);
             this.lbSerial.Name = "lbSerial";
-            this.lbSerial.Size = new System.Drawing.Size(128, 17);
+            this.lbSerial.Size = new System.Drawing.Size(12, 17);
             this.lbSerial.TabIndex = 28;
-            this.lbSerial.Text = "1555.666.444.22.1";
+            this.lbSerial.Text = " ";
             // 
             // lbFirmVersion
             // 
@@ -72,9 +72,9 @@
             this.lbFirmVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFirmVersion.Location = new System.Drawing.Point(263, 82);
             this.lbFirmVersion.Name = "lbFirmVersion";
-            this.lbFirmVersion.Size = new System.Drawing.Size(101, 17);
+            this.lbFirmVersion.Size = new System.Drawing.Size(12, 17);
             this.lbFirmVersion.TabIndex = 27;
-            this.lbFirmVersion.Text = "iBoot-1940.3.5";
+            this.lbFirmVersion.Text = " ";
             // 
             // lbSoftVersion
             // 
@@ -82,18 +82,18 @@
             this.lbSoftVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoftVersion.Location = new System.Drawing.Point(263, 63);
             this.lbSoftVersion.Name = "lbSoftVersion";
-            this.lbSoftVersion.Size = new System.Drawing.Size(40, 17);
+            this.lbSoftVersion.Size = new System.Drawing.Size(12, 17);
             this.lbSoftVersion.TabIndex = 26;
-            this.lbSoftVersion.Text = "7.0.4";
+            this.lbSoftVersion.Text = " ";
             // 
             // lbStorageFree
             // 
             this.lbStorageFree.AutoSize = true;
             this.lbStorageFree.Location = new System.Drawing.Point(300, 193);
             this.lbStorageFree.Name = "lbStorageFree";
-            this.lbStorageFree.Size = new System.Drawing.Size(70, 13);
+            this.lbStorageFree.Size = new System.Drawing.Size(10, 13);
             this.lbStorageFree.TabIndex = 25;
-            this.lbStorageFree.Text = "56.8 GB Free";
+            this.lbStorageFree.Text = " ";
             // 
             // lbStorageUsed
             // 
@@ -101,9 +101,9 @@
             this.lbStorageUsed.BackColor = System.Drawing.Color.Transparent;
             this.lbStorageUsed.Location = new System.Drawing.Point(26, 192);
             this.lbStorageUsed.Name = "lbStorageUsed";
-            this.lbStorageUsed.Size = new System.Drawing.Size(68, 13);
+            this.lbStorageUsed.Size = new System.Drawing.Size(10, 13);
             this.lbStorageUsed.TabIndex = 24;
-            this.lbStorageUsed.Text = "5.5 GB Used";
+            this.lbStorageUsed.Text = " ";
             // 
             // lbCapacity
             // 
@@ -111,9 +111,9 @@
             this.lbCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCapacity.Location = new System.Drawing.Point(202, 44);
             this.lbCapacity.Name = "lbCapacity";
-            this.lbCapacity.Size = new System.Drawing.Size(60, 17);
+            this.lbCapacity.Size = new System.Drawing.Size(12, 17);
             this.lbCapacity.TabIndex = 23;
-            this.lbCapacity.Text = "60.4 GB";
+            this.lbCapacity.Text = " ";
             // 
             // pbStorage
             // 
@@ -178,9 +178,9 @@
             this.lbPhoneName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPhoneName.Location = new System.Drawing.Point(126, 3);
             this.lbPhoneName.Name = "lbPhoneName";
-            this.lbPhoneName.Size = new System.Drawing.Size(155, 24);
+            this.lbPhoneName.Size = new System.Drawing.Size(95, 24);
             this.lbPhoneName.TabIndex = 16;
-            this.lbPhoneName.Text = "Miguel\'s Phone";
+            this.lbPhoneName.Text = "IExplorer";
             // 
             // pbPhone
             // 

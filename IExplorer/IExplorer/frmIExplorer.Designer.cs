@@ -29,24 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Media", 6, 6);
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Apps", 0, 0);
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Backups", 2, 2);
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Media Library", 1, 1);
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Photos", 4, 4);
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Bookmarks", 3, 3);
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Phone", 5, 5, new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIExplorer));
-            this.treeNavigator = new System.Windows.Forms.TreeView();
             this.iconosTreeview = new System.Windows.Forms.ImageList(this.components);
-            this.iexplorerDatos = new IExplorer_Datos.IexplorerDatos();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolBarMain = new System.Windows.Forms.ToolStrip();
             this.btnUndo = new System.Windows.Forms.ToolStripButton();
             this.btnRedo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -61,71 +46,26 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelRight = new System.Windows.Forms.Panel();
+            this.panelRightBottom = new System.Windows.Forms.Panel();
             this.panelRightCenter = new System.Windows.Forms.Panel();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDataCat = new System.Windows.Forms.Button();
             this.btnFilesCat = new System.Windows.Forms.Button();
             this.btnMediaCat = new System.Windows.Forms.Button();
-            this.panelRightBottom = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusHelp = new System.Windows.Forms.StatusStrip();
+            this.lbHelp = new System.Windows.Forms.ToolStripStatusLabel();
             this.iconosListView = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStrip1.SuspendLayout();
+            this.iexplorerDatos = new IExplorer.Observador();
+            this.treeNavigator = new IExplorer.Sujeto();
+            this.toolBarMain.SuspendLayout();
             this.menuMain.SuspendLayout();
             this.panelRight.SuspendLayout();
             this.panelRightCenter.SuspendLayout();
             this.panelButtons.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.statusHelp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // treeNavigator
-            // 
-            this.treeNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.treeNavigator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.treeNavigator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeNavigator.ForeColor = System.Drawing.Color.White;
-            this.treeNavigator.ImageIndex = 0;
-            this.treeNavigator.ImageList = this.iconosTreeview;
-            this.treeNavigator.Location = new System.Drawing.Point(8, 57);
-            this.treeNavigator.Margin = new System.Windows.Forms.Padding(0);
-            this.treeNavigator.Name = "treeNavigator";
-            treeNode8.ImageIndex = 6;
-            treeNode8.Name = "nodeMedia";
-            treeNode8.SelectedImageIndex = 6;
-            treeNode8.Text = "Media";
-            treeNode9.ImageIndex = 0;
-            treeNode9.Name = "nodeApps";
-            treeNode9.SelectedImageIndex = 0;
-            treeNode9.Text = "Apps";
-            treeNode10.ImageIndex = 2;
-            treeNode10.Name = "nodeBackups";
-            treeNode10.SelectedImageIndex = 2;
-            treeNode10.Text = "Backups";
-            treeNode11.ImageIndex = 1;
-            treeNode11.Name = "nodeLibrary";
-            treeNode11.SelectedImageIndex = 1;
-            treeNode11.Text = "Media Library";
-            treeNode12.ImageIndex = 4;
-            treeNode12.Name = "nodePhotos";
-            treeNode12.SelectedImageIndex = 4;
-            treeNode12.Text = "Photos";
-            treeNode13.ImageIndex = 3;
-            treeNode13.Name = "nodeBookmarks";
-            treeNode13.SelectedImageIndex = 3;
-            treeNode13.Text = "Bookmarks";
-            treeNode14.Checked = true;
-            treeNode14.ImageIndex = 5;
-            treeNode14.Name = "nodeRoot";
-            treeNode14.SelectedImageIndex = 5;
-            treeNode14.Text = "Phone";
-            this.treeNavigator.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode14});
-            this.treeNavigator.SelectedImageIndex = 0;
-            this.treeNavigator.Size = new System.Drawing.Size(221, 514);
-            this.treeNavigator.TabIndex = 1;
             // 
             // iconosTreeview
             // 
@@ -139,21 +79,10 @@
             this.iconosTreeview.Images.SetKeyName(5, "llamada-smartphone .png");
             this.iconosTreeview.Images.SetKeyName(6, "silueta-del-icono-de-hogar.png");
             // 
-            // iexplorerDatos
+            // toolBarMain
             // 
-            this.iexplorerDatos.AllowDrop = true;
-            this.iexplorerDatos.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.iexplorerDatos.Location = new System.Drawing.Point(203, 20);
-            this.iexplorerDatos.Name = "iexplorerDatos";
-            this.iexplorerDatos.Size = new System.Drawing.Size(379, 212);
-            this.iexplorerDatos.TabIndex = 2;
-            this.iexplorerDatos.DragDrop += new System.Windows.Forms.DragEventHandler(this.iexplorerDatos_DragDrop);
-            this.iexplorerDatos.DragEnter += new System.Windows.Forms.DragEventHandler(this.iexplorerDatos1_DragEnter);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolBarMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolBarMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnUndo,
             this.btnRedo,
             this.toolStripSeparator1,
@@ -161,14 +90,14 @@
             this.cbMenu,
             this.lbSearch,
             this.tvSearch});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(969, 25);
-            this.toolStrip1.Stretch = true;
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.Resize += new System.EventHandler(this.toolStrip1_Resize);
+            this.toolBarMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolBarMain.Location = new System.Drawing.Point(0, 24);
+            this.toolBarMain.Name = "toolBarMain";
+            this.toolBarMain.Size = new System.Drawing.Size(969, 25);
+            this.toolBarMain.Stretch = true;
+            this.toolBarMain.TabIndex = 3;
+            this.toolBarMain.Text = "toolStrip1";
+            this.toolBarMain.Resize += new System.EventHandler(this.toolStrip1_Resize);
             // 
             // btnUndo
             // 
@@ -279,12 +208,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelRight.BackColor = System.Drawing.Color.White;
+            this.panelRight.Controls.Add(this.panelRightBottom);
             this.panelRight.Controls.Add(this.panelRightCenter);
             this.panelRight.Controls.Add(this.iexplorerDatos);
             this.panelRight.Location = new System.Drawing.Point(232, 56);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(738, 515);
             this.panelRight.TabIndex = 27;
+            // 
+            // panelRightBottom
+            // 
+            this.panelRightBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelRightBottom.Location = new System.Drawing.Point(3, 286);
+            this.panelRightBottom.Name = "panelRightBottom";
+            this.panelRightBottom.Size = new System.Drawing.Size(742, 226);
+            this.panelRightBottom.TabIndex = 4;
             // 
             // panelRightCenter
             // 
@@ -352,30 +292,21 @@
             this.btnMediaCat.Text = "        Media";
             this.btnMediaCat.UseVisualStyleBackColor = false;
             // 
-            // panelRightBottom
+            // statusHelp
             // 
-            this.panelRightBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelRightBottom.Location = new System.Drawing.Point(229, 342);
-            this.panelRightBottom.Name = "panelRightBottom";
-            this.panelRightBottom.Size = new System.Drawing.Size(742, 226);
-            this.panelRightBottom.TabIndex = 4;
+            this.statusHelp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbHelp});
+            this.statusHelp.Location = new System.Drawing.Point(0, 579);
+            this.statusHelp.Name = "statusHelp";
+            this.statusHelp.Size = new System.Drawing.Size(969, 22);
+            this.statusHelp.TabIndex = 28;
+            this.statusHelp.Text = "statusHelp";
             // 
-            // statusStrip1
+            // lbHelp
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 579);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(969, 22);
-            this.statusStrip1.TabIndex = 28;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.lbHelp.Name = "lbHelp";
+            this.lbHelp.Size = new System.Drawing.Size(58, 17);
+            this.lbHelp.Text = "Hola q tal";
             // 
             // iconosListView
             // 
@@ -393,33 +324,64 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // iexplorerDatos
+            // 
+            this.iexplorerDatos.AllowDrop = true;
+            this.iexplorerDatos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iexplorerDatos.Location = new System.Drawing.Point(203, 20);
+            this.iexplorerDatos.Name = "iexplorerDatos";
+            this.iexplorerDatos.Size = new System.Drawing.Size(379, 212);
+            this.iexplorerDatos.sujeto = null;
+            this.iexplorerDatos.TabIndex = 2;
+            this.iexplorerDatos.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragDrop);
+            this.iexplorerDatos.DragEnter += new System.Windows.Forms.DragEventHandler(this.dragEnter);
+            // 
+            // treeNavigator
+            // 
+            this.treeNavigator.AllowDrop = true;
+            this.treeNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeNavigator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.treeNavigator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeNavigator.ForeColor = System.Drawing.Color.White;
+            this.treeNavigator.ImageIndex = 0;
+            this.treeNavigator.ImageList = this.iconosTreeview;
+            this.treeNavigator.Location = new System.Drawing.Point(8, 57);
+            this.treeNavigator.Margin = new System.Windows.Forms.Padding(0);
+            this.treeNavigator.Name = "treeNavigator";
+            this.treeNavigator.observers = null;
+            this.treeNavigator.SelectedImageIndex = 0;
+            this.treeNavigator.Size = new System.Drawing.Size(221, 514);
+            this.treeNavigator.TabIndex = 1;
+            this.treeNavigator.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeNavigator_NodeMouseClick);
+            this.treeNavigator.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragDrop);
+            this.treeNavigator.DragEnter += new System.Windows.Forms.DragEventHandler(this.dragEnter);
+            // 
             // frmIExplorer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(969, 601);
-            this.Controls.Add(this.panelRightBottom);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusHelp);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.toolBarMain);
             this.Controls.Add(this.menuMain);
             this.Controls.Add(this.treeNavigator);
             this.MainMenuStrip = this.menuMain;
             this.Name = "frmIExplorer";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.Text = "IExplorer";
+            this.toolBarMain.ResumeLayout(false);
+            this.toolBarMain.PerformLayout();
             this.menuMain.ResumeLayout(false);
             this.menuMain.PerformLayout();
             this.panelRight.ResumeLayout(false);
             this.panelRightCenter.ResumeLayout(false);
             this.panelButtons.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusHelp.ResumeLayout(false);
+            this.statusHelp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -427,9 +389,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.TreeView treeNavigator;
-        private IExplorer_Datos.IexplorerDatos iexplorerDatos;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private Sujeto treeNavigator;
+        private Observador iexplorerDatos;
+        private System.Windows.Forms.ToolStrip toolBarMain;
         private System.Windows.Forms.ToolStripButton btnUndo;
         private System.Windows.Forms.ToolStripButton btnRedo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -444,8 +406,8 @@
         private System.Windows.Forms.ToolStripLabel lbSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelRight;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.StatusStrip statusHelp;
+        private System.Windows.Forms.ToolStripStatusLabel lbHelp;
         private System.Windows.Forms.Panel panelRightCenter;
         private System.Windows.Forms.Button btnMediaCat;
         private System.Windows.Forms.Button btnFilesCat;

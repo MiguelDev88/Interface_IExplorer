@@ -18,10 +18,10 @@ namespace IExplorer
         public String softVersion { get; set; }
         public List<String> files { get; set; }
 
-
         public Phone() { }
 
-        public Phone(String number, String model, String name, float storage, float storageUsed, String firmVersion, String softVersion, String serialNum, List<String> files)
+        public Phone(String number, String model, String name, float storage, float storageUsed, String firmVersion, 
+                     String softVersion, String serialNum, List<String> files)
         {
             this.number=number;
             this.model = model;

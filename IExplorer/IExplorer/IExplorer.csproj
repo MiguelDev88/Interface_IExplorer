@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Observador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sujeto.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Phone.cs" />
     <Compile Include="frmIExplorer.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\docs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galaxy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IPhone_a.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

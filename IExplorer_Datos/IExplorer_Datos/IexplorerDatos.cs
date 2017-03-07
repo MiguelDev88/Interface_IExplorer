@@ -57,9 +57,9 @@ namespace IExplorer_Datos
             pbPhone.Image = img;
         }
 
-        public void setIncrement (int increment)
+        public void setIncrement (int value)
         {
-            pbStorage.Increment(increment);
+            pbStorage.Value= value;
         }
 
         public void setCapacity (float capacity)

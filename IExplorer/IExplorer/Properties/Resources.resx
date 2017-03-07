@@ -145,8 +145,14 @@
   <data name="estrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="galaxy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\galaxy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IPhone_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IPhone_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="la_computacion_en_nube__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\la-computacion-en-nube (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

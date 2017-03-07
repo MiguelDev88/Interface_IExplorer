@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <number>664553442</number>
+  <model>samsung</model>
+  <name>Miguel</name>
+  <storage>300</storage>
+  <storageUsed>100</storageUsed>
+  <serialNum>123456879</serialNum>
+  <firmVersion>133333333</firmVersion>
+  <softVersion>443.5455,4312</softVersion>
+  <files>
+    <string>ole</string>
+    <string>ole2</string>
+  </files>
+</Phone>
