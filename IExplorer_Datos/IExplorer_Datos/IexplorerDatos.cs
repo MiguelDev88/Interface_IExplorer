@@ -42,14 +42,14 @@ namespace IExplorer_Datos
             lbNumber.Text = phoneNum;
         }
 
-        public void setStorageUsed(String storageUsed)
+        public void setStorageUsed(float storageUsed)
         {
-            lbStorageUsed.Text = storageUsed;
+            lbStorageUsed.Text = ""+storageUsed + " GB Used";
         }
 
-        public void setStorageFree(String storageFree)
+        public void setStorageFree(float storageFree)
         {
-            lbStorageFree.Text = storageFree;
+            lbStorageFree.Text = ""+storageFree+" GB Free";
         }
 
         public void setPhoneLogo (Bitmap img)
@@ -60,6 +60,11 @@ namespace IExplorer_Datos
         public void setIncrement (int increment)
         {
             pbStorage.Increment(increment);
+        }
+
+        public void setCapacity (float capacity)
+        {
+            lbCapacity.Text = ""+capacity + " GB";
         }
 
     }

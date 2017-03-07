@@ -1,6 +1,6 @@
 ﻿namespace IExplorer
 {
-    partial class Form1
+    partial class frmIExplorer
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,52 +29,55 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Media", 6, 6);
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Apps", 0, 0);
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Backups", 2, 2);
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Media Library", 1, 1);
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Photos", 4, 4);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Bookmarks", 3, 3);
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Phone", 5, 5, new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Media", 6, 6);
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Apps", 0, 0);
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Backups", 2, 2);
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Media Library", 1, 1);
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Photos", 4, 4);
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Bookmarks", 3, 3);
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Phone", 5, 5, new System.Windows.Forms.TreeNode[] {
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIExplorer));
             this.treeNavigator = new System.Windows.Forms.TreeView();
             this.iconosTreeview = new System.Windows.Forms.ImageList(this.components);
-            this.iexplorerDatos1 = new IExplorer_Datos.IexplorerDatos();
+            this.iexplorerDatos = new IExplorer_Datos.IexplorerDatos();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnUndo = new System.Windows.Forms.ToolStripButton();
+            this.btnRedo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cbPhonePath = new System.Windows.Forms.ToolStripComboBox();
             this.cbMenu = new System.Windows.Forms.ToolStripComboBox();
+            this.lbSearch = new System.Windows.Forms.ToolStripLabel();
             this.tvSearch = new System.Windows.Forms.ToolStripTextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.panelRightCenter = new System.Windows.Forms.Panel();
+            this.panelButtons = new System.Windows.Forms.Panel();
+            this.btnDataCat = new System.Windows.Forms.Button();
+            this.btnFilesCat = new System.Windows.Forms.Button();
+            this.btnMediaCat = new System.Windows.Forms.Button();
+            this.panelRightBottom = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnFilesCat = new System.Windows.Forms.Button();
-            this.btnDataCat = new System.Windows.Forms.Button();
-            this.btnMediaCat = new System.Windows.Forms.Button();
+            this.iconosListView = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnUndo = new System.Windows.Forms.ToolStripButton();
-            this.btnRedo = new System.Windows.Forms.ToolStripButton();
-            this.lbSearch = new System.Windows.Forms.ToolStripLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.menuMain.SuspendLayout();
+            this.panelRight.SuspendLayout();
+            this.panelRightCenter.SuspendLayout();
+            this.panelButtons.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeNavigator
@@ -89,37 +92,37 @@
             this.treeNavigator.Location = new System.Drawing.Point(8, 57);
             this.treeNavigator.Margin = new System.Windows.Forms.Padding(0);
             this.treeNavigator.Name = "treeNavigator";
-            treeNode1.ImageIndex = 6;
-            treeNode1.Name = "nodeMedia";
-            treeNode1.SelectedImageIndex = 6;
-            treeNode1.Text = "Media";
-            treeNode2.ImageIndex = 0;
-            treeNode2.Name = "nodeApps";
-            treeNode2.SelectedImageIndex = 0;
-            treeNode2.Text = "Apps";
-            treeNode3.ImageIndex = 2;
-            treeNode3.Name = "nodeBackups";
-            treeNode3.SelectedImageIndex = 2;
-            treeNode3.Text = "Backups";
-            treeNode4.ImageIndex = 1;
-            treeNode4.Name = "nodeLibrary";
-            treeNode4.SelectedImageIndex = 1;
-            treeNode4.Text = "Media Library";
-            treeNode5.ImageIndex = 4;
-            treeNode5.Name = "nodePhotos";
-            treeNode5.SelectedImageIndex = 4;
-            treeNode5.Text = "Photos";
-            treeNode6.ImageIndex = 3;
-            treeNode6.Name = "nodeBookmarks";
-            treeNode6.SelectedImageIndex = 3;
-            treeNode6.Text = "Bookmarks";
-            treeNode7.Checked = true;
-            treeNode7.ImageIndex = 5;
-            treeNode7.Name = "nodeRoot";
-            treeNode7.SelectedImageIndex = 5;
-            treeNode7.Text = "Phone";
+            treeNode8.ImageIndex = 6;
+            treeNode8.Name = "nodeMedia";
+            treeNode8.SelectedImageIndex = 6;
+            treeNode8.Text = "Media";
+            treeNode9.ImageIndex = 0;
+            treeNode9.Name = "nodeApps";
+            treeNode9.SelectedImageIndex = 0;
+            treeNode9.Text = "Apps";
+            treeNode10.ImageIndex = 2;
+            treeNode10.Name = "nodeBackups";
+            treeNode10.SelectedImageIndex = 2;
+            treeNode10.Text = "Backups";
+            treeNode11.ImageIndex = 1;
+            treeNode11.Name = "nodeLibrary";
+            treeNode11.SelectedImageIndex = 1;
+            treeNode11.Text = "Media Library";
+            treeNode12.ImageIndex = 4;
+            treeNode12.Name = "nodePhotos";
+            treeNode12.SelectedImageIndex = 4;
+            treeNode12.Text = "Photos";
+            treeNode13.ImageIndex = 3;
+            treeNode13.Name = "nodeBookmarks";
+            treeNode13.SelectedImageIndex = 3;
+            treeNode13.Text = "Bookmarks";
+            treeNode14.Checked = true;
+            treeNode14.ImageIndex = 5;
+            treeNode14.Name = "nodeRoot";
+            treeNode14.SelectedImageIndex = 5;
+            treeNode14.Text = "Phone";
             this.treeNavigator.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7});
+            treeNode14});
             this.treeNavigator.SelectedImageIndex = 0;
             this.treeNavigator.Size = new System.Drawing.Size(221, 514);
             this.treeNavigator.TabIndex = 1;
@@ -136,13 +139,16 @@
             this.iconosTreeview.Images.SetKeyName(5, "llamada-smartphone .png");
             this.iconosTreeview.Images.SetKeyName(6, "silueta-del-icono-de-hogar.png");
             // 
-            // iexplorerDatos1
+            // iexplorerDatos
             // 
-            this.iexplorerDatos1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.iexplorerDatos1.Location = new System.Drawing.Point(203, 20);
-            this.iexplorerDatos1.Name = "iexplorerDatos1";
-            this.iexplorerDatos1.Size = new System.Drawing.Size(379, 212);
-            this.iexplorerDatos1.TabIndex = 2;
+            this.iexplorerDatos.AllowDrop = true;
+            this.iexplorerDatos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iexplorerDatos.Location = new System.Drawing.Point(203, 20);
+            this.iexplorerDatos.Name = "iexplorerDatos";
+            this.iexplorerDatos.Size = new System.Drawing.Size(379, 212);
+            this.iexplorerDatos.TabIndex = 2;
+            this.iexplorerDatos.DragDrop += new System.Windows.Forms.DragEventHandler(this.iexplorerDatos_DragDrop);
+            this.iexplorerDatos.DragEnter += new System.Windows.Forms.DragEventHandler(this.iexplorerDatos1_DragEnter);
             // 
             // toolStrip1
             // 
@@ -164,6 +170,25 @@
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Resize += new System.EventHandler(this.toolStrip1_Resize);
             // 
+            // btnUndo
+            // 
+            this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnUndo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccionmirror;
+            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUndo.Margin = new System.Windows.Forms.Padding(6, 1, 0, 2);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(23, 22);
+            this.btnUndo.Text = "toolStripButton1";
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRedo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccion;
+            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Size = new System.Drawing.Size(23, 22);
+            this.btnRedo.Text = "toolStripButton2";
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -184,6 +209,14 @@
             this.cbMenu.Name = "cbMenu";
             this.cbMenu.Size = new System.Drawing.Size(30, 23);
             // 
+            // lbSearch
+            // 
+            this.lbSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.lbSearch.AutoSize = false;
+            this.lbSearch.Image = global::IExplorer.Properties.Resources.busqueda;
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(22, 22);
+            // 
             // tvSearch
             // 
             this.tvSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -193,21 +226,22 @@
             this.tvSearch.Text = "asdasd";
             this.tvSearch.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // menuStrip1
+            // menuMain
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(969, 24);
-            this.menuStrip1.TabIndex = 25;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuMain.Location = new System.Drawing.Point(0, 0);
+            this.menuMain.Name = "menuMain";
+            this.menuMain.Size = new System.Drawing.Size(969, 24);
+            this.menuMain.TabIndex = 25;
+            this.menuMain.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadDataToolStripMenuItem});
+            this.loadDataToolStripMenuItem,
+            this.saveDataToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
@@ -217,6 +251,13 @@
             this.loadDataToolStripMenuItem.Name = "loadDataToolStripMenuItem";
             this.loadDataToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.loadDataToolStripMenuItem.Text = "&Load Data";
+            // 
+            // saveDataToolStripMenuItem
+            // 
+            this.saveDataToolStripMenuItem.Name = "saveDataToolStripMenuItem";
+            this.saveDataToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.saveDataToolStripMenuItem.Text = "&Save Data";
+            this.saveDataToolStripMenuItem.Click += new System.EventHandler(this.saveDataToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -232,30 +273,93 @@
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.languageToolStripMenuItem.Text = "&Language";
             // 
-            // panel2
+            // panelRight
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelRight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.iexplorerDatos1);
-            this.panel2.Location = new System.Drawing.Point(232, 56);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(738, 515);
-            this.panel2.TabIndex = 27;
+            this.panelRight.BackColor = System.Drawing.Color.White;
+            this.panelRight.Controls.Add(this.panelRightCenter);
+            this.panelRight.Controls.Add(this.iexplorerDatos);
+            this.panelRight.Location = new System.Drawing.Point(232, 56);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(738, 515);
+            this.panelRight.TabIndex = 27;
             // 
-            // panel1
+            // panelRightCenter
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelRightCenter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(-8, 238);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(747, 47);
-            this.panel1.TabIndex = 3;
+            this.panelRightCenter.BackColor = System.Drawing.Color.White;
+            this.panelRightCenter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelRightCenter.Controls.Add(this.panelButtons);
+            this.panelRightCenter.Location = new System.Drawing.Point(-8, 238);
+            this.panelRightCenter.Name = "panelRightCenter";
+            this.panelRightCenter.Size = new System.Drawing.Size(747, 47);
+            this.panelRightCenter.TabIndex = 3;
+            // 
+            // panelButtons
+            // 
+            this.panelButtons.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelButtons.Controls.Add(this.btnDataCat);
+            this.panelButtons.Controls.Add(this.btnFilesCat);
+            this.panelButtons.Controls.Add(this.btnMediaCat);
+            this.panelButtons.Location = new System.Drawing.Point(237, 3);
+            this.panelButtons.Name = "panelButtons";
+            this.panelButtons.Size = new System.Drawing.Size(338, 38);
+            this.panelButtons.TabIndex = 3;
+            // 
+            // btnDataCat
+            // 
+            this.btnDataCat.BackColor = System.Drawing.Color.White;
+            this.btnDataCat.FlatAppearance.BorderSize = 0;
+            this.btnDataCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataCat.Image = global::IExplorer.Properties.Resources.la_computacion_en_nube__1_;
+            this.btnDataCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDataCat.Location = new System.Drawing.Point(112, 0);
+            this.btnDataCat.Name = "btnDataCat";
+            this.btnDataCat.Size = new System.Drawing.Size(111, 37);
+            this.btnDataCat.TabIndex = 1;
+            this.btnDataCat.Text = "       Data";
+            this.btnDataCat.UseVisualStyleBackColor = false;
+            // 
+            // btnFilesCat
+            // 
+            this.btnFilesCat.BackColor = System.Drawing.Color.White;
+            this.btnFilesCat.FlatAppearance.BorderSize = 0;
+            this.btnFilesCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilesCat.Image = global::IExplorer.Properties.Resources.carpeta;
+            this.btnFilesCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFilesCat.Location = new System.Drawing.Point(224, 0);
+            this.btnFilesCat.Name = "btnFilesCat";
+            this.btnFilesCat.Size = new System.Drawing.Size(111, 37);
+            this.btnFilesCat.TabIndex = 2;
+            this.btnFilesCat.Text = "        Files";
+            this.btnFilesCat.UseVisualStyleBackColor = false;
+            this.btnFilesCat.Click += new System.EventHandler(this.btnFilesCat_Click);
+            // 
+            // btnMediaCat
+            // 
+            this.btnMediaCat.BackColor = System.Drawing.Color.White;
+            this.btnMediaCat.FlatAppearance.BorderSize = 0;
+            this.btnMediaCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaCat.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
+            this.btnMediaCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMediaCat.Location = new System.Drawing.Point(0, 0);
+            this.btnMediaCat.Name = "btnMediaCat";
+            this.btnMediaCat.Size = new System.Drawing.Size(111, 37);
+            this.btnMediaCat.TabIndex = 0;
+            this.btnMediaCat.Text = "        Media";
+            this.btnMediaCat.UseVisualStyleBackColor = false;
+            // 
+            // panelRightBottom
+            // 
+            this.panelRightBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelRightBottom.Location = new System.Drawing.Point(229, 342);
+            this.panelRightBottom.Name = "panelRightBottom";
+            this.panelRightBottom.Size = new System.Drawing.Size(742, 226);
+            this.panelRightBottom.TabIndex = 4;
             // 
             // statusStrip1
             // 
@@ -273,47 +377,11 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // btnFilesCat
+            // iconosListView
             // 
-            this.btnFilesCat.BackColor = System.Drawing.Color.White;
-            this.btnFilesCat.FlatAppearance.BorderSize = 0;
-            this.btnFilesCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilesCat.Image = global::IExplorer.Properties.Resources.carpeta;
-            this.btnFilesCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilesCat.Location = new System.Drawing.Point(224, 0);
-            this.btnFilesCat.Name = "btnFilesCat";
-            this.btnFilesCat.Size = new System.Drawing.Size(111, 37);
-            this.btnFilesCat.TabIndex = 2;
-            this.btnFilesCat.Text = "        Files";
-            this.btnFilesCat.UseVisualStyleBackColor = false;
-            // 
-            // btnDataCat
-            // 
-            this.btnDataCat.BackColor = System.Drawing.Color.White;
-            this.btnDataCat.FlatAppearance.BorderSize = 0;
-            this.btnDataCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataCat.Image = global::IExplorer.Properties.Resources.la_computacion_en_nube__1_;
-            this.btnDataCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataCat.Location = new System.Drawing.Point(112, 0);
-            this.btnDataCat.Name = "btnDataCat";
-            this.btnDataCat.Size = new System.Drawing.Size(111, 37);
-            this.btnDataCat.TabIndex = 1;
-            this.btnDataCat.Text = "       Data";
-            this.btnDataCat.UseVisualStyleBackColor = false;
-            // 
-            // btnMediaCat
-            // 
-            this.btnMediaCat.BackColor = System.Drawing.Color.White;
-            this.btnMediaCat.FlatAppearance.BorderSize = 0;
-            this.btnMediaCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMediaCat.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMediaCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMediaCat.Location = new System.Drawing.Point(0, 0);
-            this.btnMediaCat.Name = "btnMediaCat";
-            this.btnMediaCat.Size = new System.Drawing.Size(111, 37);
-            this.btnMediaCat.TabIndex = 0;
-            this.btnMediaCat.Text = "        Media";
-            this.btnMediaCat.UseVisualStyleBackColor = false;
+            this.iconosListView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconosListView.ImageStream")));
+            this.iconosListView.TransparentColor = System.Drawing.Color.Transparent;
+            this.iconosListView.Images.SetKeyName(0, "docs.png");
             // 
             // pictureBox1
             // 
@@ -325,71 +393,34 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // btnUndo
-            // 
-            this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnUndo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccionmirror;
-            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnUndo.Margin = new System.Windows.Forms.Padding(6, 1, 0, 2);
-            this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(23, 22);
-            this.btnUndo.Text = "toolStripButton1";
-            // 
-            // btnRedo
-            // 
-            this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnRedo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccion;
-            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(23, 22);
-            this.btnRedo.Text = "toolStripButton2";
-            // 
-            // lbSearch
-            // 
-            this.lbSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.lbSearch.AutoSize = false;
-            this.lbSearch.Image = global::IExplorer.Properties.Resources.busqueda;
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(22, 22);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.btnDataCat);
-            this.panel3.Controls.Add(this.btnFilesCat);
-            this.panel3.Controls.Add(this.btnMediaCat);
-            this.panel3.Location = new System.Drawing.Point(237, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(338, 38);
-            this.panel3.TabIndex = 3;
-            // 
-            // Form1
+            // frmIExplorer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(969, 601);
+            this.Controls.Add(this.panelRightBottom);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelRight);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuMain);
             this.Controls.Add(this.treeNavigator);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.MainMenuStrip = this.menuMain;
+            this.Name = "frmIExplorer";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.menuMain.ResumeLayout(false);
+            this.menuMain.PerformLayout();
+            this.panelRight.ResumeLayout(false);
+            this.panelRightCenter.ResumeLayout(false);
+            this.panelButtons.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,7 +428,7 @@
 
         #endregion
         private System.Windows.Forms.TreeView treeNavigator;
-        private IExplorer_Datos.IexplorerDatos iexplorerDatos1;
+        private IExplorer_Datos.IexplorerDatos iexplorerDatos;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnUndo;
         private System.Windows.Forms.ToolStripButton btnRedo;
@@ -405,22 +436,25 @@
         private System.Windows.Forms.ToolStripComboBox cbPhonePath;
         private System.Windows.Forms.ToolStripComboBox cbMenu;
         private System.Windows.Forms.ToolStripTextBox tvSearch;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuMain;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripLabel lbSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelRightCenter;
         private System.Windows.Forms.Button btnMediaCat;
         private System.Windows.Forms.Button btnFilesCat;
         private System.Windows.Forms.Button btnDataCat;
         private System.Windows.Forms.ImageList iconosTreeview;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelButtons;
+        private System.Windows.Forms.Panel panelRightBottom;
+        private System.Windows.Forms.ImageList iconosListView;
+        private System.Windows.Forms.ToolStripMenuItem saveDataToolStripMenuItem;
     }
 }
 
