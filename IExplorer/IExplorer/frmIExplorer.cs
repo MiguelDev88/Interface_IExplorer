@@ -16,11 +16,12 @@ namespace IExplorer
 
         Phone phoneActive;
         List<Phone> phones;
+        
 
         public frmIExplorer()
         {
             InitializeComponent();
-            cbPhonePath.Width = tvSearch.Bounds.Left - btnUndo.Bounds.Right - 45;
+            cbPhonePath.Width = tvSearch.Bounds.Left - lbImgPath.Bounds.Right - 45;
             phones = new List<Phone>();
 
             treeNavigator.attach(iexplorerDatos);
@@ -29,7 +30,7 @@ namespace IExplorer
 
         private void toolStrip1_Resize(object sender, EventArgs e)
         {
-            cbPhonePath.Width = tvSearch.Bounds.Left - btnUndo.Bounds.Right - 45;
+            cbPhonePath.Width = tvSearch.Bounds.Left - lbImgPath.Bounds.Right - 45;
         }
 
         private void btnFilesCat_Click(object sender, EventArgs e)
@@ -52,6 +53,19 @@ namespace IExplorer
 
             }
 
+            lvFiles.MouseClick += listView_MouseClick;
+
+        }
+
+        private void listView_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (((ListView)sender).FocusedItem.Bounds.Contains(e.Location) == true)
+                {
+                    cMenuFiles.Show(Cursor.Position);
+                }
+            }
         }
 
         private void saveDataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,5 +108,20 @@ namespace IExplorer
             }
 
         }
+
+
+
+        /*
+private void tsItemDelete_Click(object sender, EventArgs e)
+{
+   //temp= phoneActive.files;
+
+   //((ListView)(((ContextMenuStrip)sender).Parent)).SelectedItems;
+   phoneActive.files.Remove(((ListView)(((ContextMenuStrip)sender).Parent)).SelectedItems[0].Text);
+
+   ((ListView)(((ContextMenuStrip)sender).Parent)).Items.Remove(((ListView)(((ContextMenuStrip)sender).Parent)).SelectedItems[0]);
+
+}
+*/
     }
 }
