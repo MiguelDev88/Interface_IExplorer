@@ -49,13 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Observador.cs">
+    <Compile Include="Classes\Observador.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sujeto.cs">
+    <Compile Include="Classes\Sujeto.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Phone.cs" />
+    <Compile Include="Classes\Phone.cs" />
     <Compile Include="frmIExplorer.cs">
       <SubType>Form</SubType>
     </Compile>

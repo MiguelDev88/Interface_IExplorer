@@ -57,7 +57,6 @@
             this.btnDataCat = new System.Windows.Forms.Button();
             this.btnFilesCat = new System.Windows.Forms.Button();
             this.btnMediaCat = new System.Windows.Forms.Button();
-            this.statusHelp = new System.Windows.Forms.StatusStrip();
             this.iconosListView = new System.Windows.Forms.ImageList(this.components);
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.cMenuFiles = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -162,9 +161,9 @@
             this.cbMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.cbMenu.AutoSize = false;
             this.cbMenu.Items.AddRange(new object[] {
-            "Verde",
-            "Azul",
-            "Amarillo"});
+            "V",
+            "M",
+            "Y"});
             this.cbMenu.Margin = new System.Windows.Forms.Padding(5, 0, 10, 0);
             this.cbMenu.Name = "cbMenu";
             this.cbMenu.Size = new System.Drawing.Size(30, 23);
@@ -355,14 +354,6 @@
             this.toolTip.SetToolTip(this.btnMediaCat, "Music, Videos, Etc");
             this.btnMediaCat.UseVisualStyleBackColor = false;
             // 
-            // statusHelp
-            // 
-            this.statusHelp.Location = new System.Drawing.Point(0, 579);
-            this.statusHelp.Name = "statusHelp";
-            this.statusHelp.Size = new System.Drawing.Size(969, 22);
-            this.statusHelp.TabIndex = 28;
-            this.statusHelp.Text = "statusHelp";
-            // 
             // iconosListView
             // 
             this.iconosListView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconosListView.ImageStream")));
@@ -502,7 +493,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(969, 601);
-            this.Controls.Add(this.statusHelp);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.toolBarMain);
             this.Controls.Add(this.menuMain);
@@ -541,7 +531,6 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripLabel lbSearch;
         private System.Windows.Forms.Panel panelRight;
-        private System.Windows.Forms.StatusStrip statusHelp;
         private System.Windows.Forms.Panel panelRightCenter;
         private System.Windows.Forms.Button btnMediaCat;
         private System.Windows.Forms.Button btnFilesCat;

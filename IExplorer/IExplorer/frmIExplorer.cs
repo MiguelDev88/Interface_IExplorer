@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -57,6 +59,24 @@ namespace IExplorer
 
         }
 
+        private void languageMenuItem_Click(object sender, EventArgs e)
+        {
+
+            switch (((ToolStripItem)sender).Name)
+            {
+                case ("españolToolStripMenuItem"):
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("gl-ES");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("gl-ES");
+                    break;
+                case ("englishToolStripMenuItem"):
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+        }
+
         private void listView_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -103,10 +123,12 @@ namespace IExplorer
         {
             if (e.Node.Parent == null)
             {
+                if(phoneActive != phones[e.Node.Index])
+                    panelRightBottom.Controls.Clear();
                 phoneActive = phones[e.Node.Index];
                 treeNavigator.notify(phoneActive);
+                
             }
-
         }
 
 
