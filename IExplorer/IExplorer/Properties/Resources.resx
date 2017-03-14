@@ -172,4 +172,25 @@
   <data name="telefono_inteligente__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\telefono-inteligente (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_seleccionar_idioma_cuadricula_de_la_tierra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-seleccionar-idioma-cuadricula-de-la-tierra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carpetaload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carpetaload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reino_unido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reino-unido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

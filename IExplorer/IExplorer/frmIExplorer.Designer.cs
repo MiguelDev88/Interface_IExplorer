@@ -97,6 +97,7 @@
             // 
             // toolBarMain
             // 
+            resources.ApplyResources(this.toolBarMain, "toolBarMain");
             this.toolBarMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolBarMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnUndo,
@@ -108,250 +109,207 @@
             this.lbSearch,
             this.tvSearch});
             this.toolBarMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolBarMain.Location = new System.Drawing.Point(0, 24);
             this.toolBarMain.Name = "toolBarMain";
-            this.toolBarMain.Size = new System.Drawing.Size(969, 25);
             this.toolBarMain.Stretch = true;
-            this.toolBarMain.TabIndex = 3;
-            this.toolBarMain.Text = "toolStrip1";
+            this.toolBarMain.TabStop = true;
+            this.toolTip.SetToolTip(this.toolBarMain, resources.GetString("toolBarMain.ToolTip"));
             this.toolBarMain.Resize += new System.EventHandler(this.toolStrip1_Resize);
             // 
             // btnUndo
             // 
+            resources.ApplyResources(this.btnUndo, "btnUndo");
             this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnUndo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccionmirror;
-            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUndo.Margin = new System.Windows.Forms.Padding(6, 1, 0, 2);
             this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(23, 22);
-            this.btnUndo.Text = "btnUndo";
-            this.btnUndo.ToolTipText = "Undo 1 step";
             // 
             // btnRedo
             // 
+            resources.ApplyResources(this.btnRedo, "btnRedo");
             this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnRedo.Image = global::IExplorer.Properties.Resources.boton_de_reproduccion;
-            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(23, 22);
-            this.btnRedo.Text = "btnRedo";
-            this.btnRedo.ToolTipText = "Redo 1 step";
             // 
             // toolStripSeparator1
             // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // lbImgPath
             // 
+            resources.ApplyResources(this.lbImgPath, "lbImgPath");
             this.lbImgPath.Image = global::IExplorer.Properties.Resources.telefono_inteligente__1_;
             this.lbImgPath.Name = "lbImgPath";
-            this.lbImgPath.Size = new System.Drawing.Size(16, 22);
             // 
             // cbPhonePath
             // 
-            this.cbPhonePath.AutoSize = false;
+            resources.ApplyResources(this.cbPhonePath, "cbPhonePath");
             this.cbPhonePath.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.cbPhonePath.Name = "cbPhonePath";
-            this.cbPhonePath.Size = new System.Drawing.Size(100, 23);
-            this.cbPhonePath.ToolTipText = "Phone Path";
             // 
             // cbMenu
             // 
+            resources.ApplyResources(this.cbMenu, "cbMenu");
             this.cbMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.cbMenu.AutoSize = false;
             this.cbMenu.Items.AddRange(new object[] {
-            "V",
-            "M",
-            "Y"});
+            resources.GetString("cbMenu.Items"),
+            resources.GetString("cbMenu.Items1"),
+            resources.GetString("cbMenu.Items2")});
             this.cbMenu.Margin = new System.Windows.Forms.Padding(5, 0, 10, 0);
             this.cbMenu.Name = "cbMenu";
-            this.cbMenu.Size = new System.Drawing.Size(30, 23);
             // 
             // lbSearch
             // 
+            resources.ApplyResources(this.lbSearch, "lbSearch");
             this.lbSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.lbSearch.AutoSize = false;
             this.lbSearch.Image = global::IExplorer.Properties.Resources.busqueda;
             this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(22, 22);
             // 
             // tvSearch
             // 
+            resources.ApplyResources(this.tvSearch, "tvSearch");
             this.tvSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.tvSearch.Margin = new System.Windows.Forms.Padding(0);
             this.tvSearch.Name = "tvSearch";
-            this.tvSearch.Size = new System.Drawing.Size(250, 25);
-            this.tvSearch.Text = "Search";
-            this.tvSearch.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tvSearch.ToolTipText = "Search";
+            this.tvSearch.Click += new System.EventHandler(this.tvSearch_Click);
             // 
             // menuMain
             // 
+            resources.ApplyResources(this.menuMain, "menuMain");
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(969, 24);
-            this.menuMain.TabIndex = 25;
-            this.menuMain.Text = "menuStrip1";
+            this.menuMain.TabStop = true;
+            this.toolTip.SetToolTip(this.menuMain, resources.GetString("menuMain.ToolTip"));
             // 
             // fileToolStripMenuItem
             // 
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadDataToolStripMenuItem,
             this.saveDataToolStripMenuItem,
             this.toolStripSeparator2,
             this.ExitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
             // 
             // loadDataToolStripMenuItem
             // 
+            resources.ApplyResources(this.loadDataToolStripMenuItem, "loadDataToolStripMenuItem");
+            this.loadDataToolStripMenuItem.Image = global::IExplorer.Properties.Resources.carpetaload;
             this.loadDataToolStripMenuItem.Name = "loadDataToolStripMenuItem";
-            this.loadDataToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.loadDataToolStripMenuItem.Text = "&Load Data";
             // 
             // saveDataToolStripMenuItem
             // 
+            resources.ApplyResources(this.saveDataToolStripMenuItem, "saveDataToolStripMenuItem");
+            this.saveDataToolStripMenuItem.Image = global::IExplorer.Properties.Resources.guardar;
             this.saveDataToolStripMenuItem.Name = "saveDataToolStripMenuItem";
-            this.saveDataToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.saveDataToolStripMenuItem.Text = "&Save Data";
-            this.saveDataToolStripMenuItem.Click += new System.EventHandler(this.saveDataToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(124, 6);
             // 
             // ExitToolStripMenuItem
             // 
+            resources.ApplyResources(this.ExitToolStripMenuItem, "ExitToolStripMenuItem");
+            this.ExitToolStripMenuItem.Image = global::IExplorer.Properties.Resources.icon;
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.ExitToolStripMenuItem.Text = "&Exit";
             // 
             // helpToolStripMenuItem
             // 
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.languageToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.spanishToolStripMenuItem});
+            this.languageToolStripMenuItem.Image = global::IExplorer.Properties.Resources.boton_seleccionar_idioma_cuadricula_de_la_tierra;
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.languageToolStripMenuItem.Text = "&Language";
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Image = global::IExplorer.Properties.Resources.reino_unido;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.englishToolStripMenuItem.Text = "&English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.languageItem_Click);
             // 
             // spanishToolStripMenuItem
             // 
+            resources.ApplyResources(this.spanishToolStripMenuItem, "spanishToolStripMenuItem");
+            this.spanishToolStripMenuItem.Image = global::IExplorer.Properties.Resources.espana;
             this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.spanishToolStripMenuItem.Text = "&Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.languageItem_Click);
             // 
             // panelRight
             // 
-            this.panelRight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelRight, "panelRight");
             this.panelRight.BackColor = System.Drawing.Color.White;
             this.panelRight.Controls.Add(this.panelRightBottom);
             this.panelRight.Controls.Add(this.panelRightCenter);
             this.panelRight.Controls.Add(this.iexplorerDatos);
-            this.panelRight.Location = new System.Drawing.Point(232, 56);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(738, 515);
-            this.panelRight.TabIndex = 27;
+            this.toolTip.SetToolTip(this.panelRight, resources.GetString("panelRight.ToolTip"));
             // 
             // panelRightBottom
             // 
-            this.panelRightBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelRightBottom.Location = new System.Drawing.Point(3, 286);
+            resources.ApplyResources(this.panelRightBottom, "panelRightBottom");
             this.panelRightBottom.Name = "panelRightBottom";
-            this.panelRightBottom.Size = new System.Drawing.Size(742, 226);
-            this.panelRightBottom.TabIndex = 4;
+            this.toolTip.SetToolTip(this.panelRightBottom, resources.GetString("panelRightBottom.ToolTip"));
             // 
             // panelRightCenter
             // 
-            this.panelRightCenter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelRightCenter, "panelRightCenter");
             this.panelRightCenter.BackColor = System.Drawing.Color.White;
             this.panelRightCenter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelRightCenter.Controls.Add(this.panelButtons);
-            this.panelRightCenter.Location = new System.Drawing.Point(-8, 238);
             this.panelRightCenter.Name = "panelRightCenter";
-            this.panelRightCenter.Size = new System.Drawing.Size(747, 47);
-            this.panelRightCenter.TabIndex = 3;
+            this.panelRightCenter.TabStop = true;
+            this.toolTip.SetToolTip(this.panelRightCenter, resources.GetString("panelRightCenter.ToolTip"));
             // 
             // panelButtons
             // 
-            this.panelButtons.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.panelButtons, "panelButtons");
             this.panelButtons.Controls.Add(this.btnDataCat);
             this.panelButtons.Controls.Add(this.btnFilesCat);
             this.panelButtons.Controls.Add(this.btnMediaCat);
-            this.panelButtons.Location = new System.Drawing.Point(237, 3);
             this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(338, 38);
-            this.panelButtons.TabIndex = 3;
+            this.toolTip.SetToolTip(this.panelButtons, resources.GetString("panelButtons.ToolTip"));
             // 
             // btnDataCat
             // 
+            resources.ApplyResources(this.btnDataCat, "btnDataCat");
             this.btnDataCat.BackColor = System.Drawing.Color.White;
             this.btnDataCat.FlatAppearance.BorderSize = 0;
-            this.btnDataCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDataCat.Image = global::IExplorer.Properties.Resources.la_computacion_en_nube__1_;
-            this.btnDataCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataCat.Location = new System.Drawing.Point(112, 0);
             this.btnDataCat.Name = "btnDataCat";
-            this.btnDataCat.Size = new System.Drawing.Size(111, 37);
-            this.btnDataCat.TabIndex = 1;
-            this.btnDataCat.Text = "       Data";
-            this.toolTip.SetToolTip(this.btnDataCat, "App Data");
+            this.toolTip.SetToolTip(this.btnDataCat, resources.GetString("btnDataCat.ToolTip"));
             this.btnDataCat.UseVisualStyleBackColor = false;
             // 
             // btnFilesCat
             // 
+            resources.ApplyResources(this.btnFilesCat, "btnFilesCat");
             this.btnFilesCat.BackColor = System.Drawing.Color.White;
             this.btnFilesCat.FlatAppearance.BorderSize = 0;
-            this.btnFilesCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFilesCat.Image = global::IExplorer.Properties.Resources.carpeta;
-            this.btnFilesCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilesCat.Location = new System.Drawing.Point(224, 0);
             this.btnFilesCat.Name = "btnFilesCat";
-            this.btnFilesCat.Size = new System.Drawing.Size(111, 37);
-            this.btnFilesCat.TabIndex = 2;
-            this.btnFilesCat.Text = "        Files";
-            this.toolTip.SetToolTip(this.btnFilesCat, "Files in this phone");
+            this.toolTip.SetToolTip(this.btnFilesCat, resources.GetString("btnFilesCat.ToolTip"));
             this.btnFilesCat.UseVisualStyleBackColor = false;
             this.btnFilesCat.Click += new System.EventHandler(this.btnFilesCat_Click);
             // 
             // btnMediaCat
             // 
+            resources.ApplyResources(this.btnMediaCat, "btnMediaCat");
             this.btnMediaCat.BackColor = System.Drawing.Color.White;
             this.btnMediaCat.FlatAppearance.BorderSize = 0;
-            this.btnMediaCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMediaCat.Image = global::IExplorer.Properties.Resources.reproductor_de_musica;
-            this.btnMediaCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMediaCat.Location = new System.Drawing.Point(0, 0);
             this.btnMediaCat.Name = "btnMediaCat";
-            this.btnMediaCat.Size = new System.Drawing.Size(111, 37);
-            this.btnMediaCat.TabIndex = 0;
-            this.btnMediaCat.Text = "        Media";
-            this.toolTip.SetToolTip(this.btnMediaCat, "Music, Videos, Etc");
+            this.toolTip.SetToolTip(this.btnMediaCat, resources.GetString("btnMediaCat.ToolTip"));
             this.btnMediaCat.UseVisualStyleBackColor = false;
             // 
             // iconosListView
@@ -362,6 +320,7 @@
             // 
             // cMenuFiles
             // 
+            resources.ApplyResources(this.cMenuFiles, "cMenuFiles");
             this.cMenuFiles.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itsItemOpen,
             this.tsItemEdit,
@@ -377,130 +336,109 @@
             this.tsSep4,
             this.tsItemProperties});
             this.cMenuFiles.Name = "cMenuFiles";
-            this.cMenuFiles.Size = new System.Drawing.Size(132, 226);
+            this.toolTip.SetToolTip(this.cMenuFiles, resources.GetString("cMenuFiles.ToolTip"));
             // 
             // itsItemOpen
             // 
+            resources.ApplyResources(this.itsItemOpen, "itsItemOpen");
             this.itsItemOpen.Name = "itsItemOpen";
-            this.itsItemOpen.Size = new System.Drawing.Size(131, 22);
-            this.itsItemOpen.Text = "&Open";
             // 
             // tsItemEdit
             // 
+            resources.ApplyResources(this.tsItemEdit, "tsItemEdit");
             this.tsItemEdit.Name = "tsItemEdit";
-            this.tsItemEdit.Size = new System.Drawing.Size(131, 22);
-            this.tsItemEdit.Text = "&Edit";
             // 
             // tsSep1
             // 
+            resources.ApplyResources(this.tsSep1, "tsSep1");
             this.tsSep1.Name = "tsSep1";
-            this.tsSep1.Size = new System.Drawing.Size(128, 6);
             // 
             // tsItemShare
             // 
+            resources.ApplyResources(this.tsItemShare, "tsItemShare");
             this.tsItemShare.Name = "tsItemShare";
-            this.tsItemShare.Size = new System.Drawing.Size(131, 22);
-            this.tsItemShare.Text = "S&hare With";
             // 
             // tsItemSend
             // 
+            resources.ApplyResources(this.tsItemSend, "tsItemSend");
             this.tsItemSend.Name = "tsItemSend";
-            this.tsItemSend.Size = new System.Drawing.Size(131, 22);
-            this.tsItemSend.Text = "&Send";
             // 
             // tsSep2
             // 
+            resources.ApplyResources(this.tsSep2, "tsSep2");
             this.tsSep2.Name = "tsSep2";
-            this.tsSep2.Size = new System.Drawing.Size(128, 6);
             // 
             // tsItemCut
             // 
+            resources.ApplyResources(this.tsItemCut, "tsItemCut");
             this.tsItemCut.Name = "tsItemCut";
-            this.tsItemCut.Size = new System.Drawing.Size(131, 22);
-            this.tsItemCut.Text = "&Cut";
             // 
             // tsItemCopy
             // 
+            resources.ApplyResources(this.tsItemCopy, "tsItemCopy");
             this.tsItemCopy.Name = "tsItemCopy";
-            this.tsItemCopy.Size = new System.Drawing.Size(131, 22);
-            this.tsItemCopy.Text = "C&opy";
             // 
             // tsSep3
             // 
+            resources.ApplyResources(this.tsSep3, "tsSep3");
             this.tsSep3.Name = "tsSep3";
-            this.tsSep3.Size = new System.Drawing.Size(128, 6);
             // 
             // tsItemDelete
             // 
+            resources.ApplyResources(this.tsItemDelete, "tsItemDelete");
             this.tsItemDelete.Name = "tsItemDelete";
-            this.tsItemDelete.Size = new System.Drawing.Size(131, 22);
-            this.tsItemDelete.Text = "&Delete";
             // 
             // tsItemRename
             // 
+            resources.ApplyResources(this.tsItemRename, "tsItemRename");
             this.tsItemRename.Name = "tsItemRename";
-            this.tsItemRename.Size = new System.Drawing.Size(131, 22);
-            this.tsItemRename.Text = "&Rename";
             // 
             // tsSep4
             // 
+            resources.ApplyResources(this.tsSep4, "tsSep4");
             this.tsSep4.Name = "tsSep4";
-            this.tsSep4.Size = new System.Drawing.Size(128, 6);
             // 
             // tsItemProperties
             // 
+            resources.ApplyResources(this.tsItemProperties, "tsItemProperties");
             this.tsItemProperties.Name = "tsItemProperties";
-            this.tsItemProperties.Size = new System.Drawing.Size(131, 22);
-            this.tsItemProperties.Text = "&Properties";
             // 
             // iexplorerDatos
             // 
+            resources.ApplyResources(this.iexplorerDatos, "iexplorerDatos");
             this.iexplorerDatos.AllowDrop = true;
-            this.iexplorerDatos.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.iexplorerDatos.Location = new System.Drawing.Point(203, 20);
             this.iexplorerDatos.Name = "iexplorerDatos";
-            this.iexplorerDatos.Size = new System.Drawing.Size(379, 212);
             this.iexplorerDatos.sujeto = null;
-            this.iexplorerDatos.TabIndex = 2;
-            this.toolTip.SetToolTip(this.iexplorerDatos, "Phone Data");
+            this.toolTip.SetToolTip(this.iexplorerDatos, resources.GetString("iexplorerDatos.ToolTip"));
             this.iexplorerDatos.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragDrop);
             this.iexplorerDatos.DragEnter += new System.Windows.Forms.DragEventHandler(this.dragEnter);
             // 
             // treeNavigator
             // 
+            resources.ApplyResources(this.treeNavigator, "treeNavigator");
             this.treeNavigator.AllowDrop = true;
-            this.treeNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.treeNavigator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.treeNavigator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeNavigator.ForeColor = System.Drawing.Color.White;
-            this.treeNavigator.ImageIndex = 0;
             this.treeNavigator.ImageList = this.iconosTreeview;
-            this.treeNavigator.Location = new System.Drawing.Point(8, 57);
-            this.treeNavigator.Margin = new System.Windows.Forms.Padding(0);
             this.treeNavigator.Name = "treeNavigator";
             this.treeNavigator.observers = null;
-            this.treeNavigator.SelectedImageIndex = 0;
-            this.treeNavigator.Size = new System.Drawing.Size(221, 514);
-            this.treeNavigator.TabIndex = 1;
+            this.toolTip.SetToolTip(this.treeNavigator, resources.GetString("treeNavigator.ToolTip"));
             this.treeNavigator.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeNavigator_NodeMouseClick);
             this.treeNavigator.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragDrop);
             this.treeNavigator.DragEnter += new System.Windows.Forms.DragEventHandler(this.dragEnter);
             // 
             // frmIExplorer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(969, 601);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.toolBarMain);
             this.Controls.Add(this.menuMain);
             this.Controls.Add(this.treeNavigator);
             this.MainMenuStrip = this.menuMain;
             this.Name = "frmIExplorer";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "IExplorer";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.toolBarMain.ResumeLayout(false);
             this.toolBarMain.PerformLayout();
             this.menuMain.ResumeLayout(false);

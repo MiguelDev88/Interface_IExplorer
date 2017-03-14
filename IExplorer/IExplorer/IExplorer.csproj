@@ -64,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmIExplorer.es.resx">
+      <DependentUpon>frmIExplorer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIExplorer.resx">
       <DependentUpon>frmIExplorer.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +152,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IPhone_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpetaload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-seleccionar-idioma-cuadricula-de-la-tierra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reino-unido.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

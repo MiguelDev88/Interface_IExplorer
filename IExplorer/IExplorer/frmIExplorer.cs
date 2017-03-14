@@ -44,37 +44,21 @@ namespace IExplorer
             lvFiles.BorderStyle = BorderStyle.None;
 
             
+            if(phoneActive!= null )
+                for (int i = 0; i<phoneActive.files.Count; i++) {
+                    ListViewItem item = new ListViewItem();
+                    item.Text = phoneActive.files[i];
+                    lvFiles.LargeImageList = iconosListView;
+                    lvFiles.Items.Add(item);
+                    item.ImageIndex = 0;
+                    item.Font = new Font("Arial", 10, FontStyle.Bold);
 
-            for (int i = 0; i<phoneActive.files.Count; i++) {
-                ListViewItem item = new ListViewItem();
-                item.Text = phoneActive.files[i];
-                lvFiles.LargeImageList = iconosListView;
-                lvFiles.Items.Add(item);
-                item.ImageIndex = 0;
-                item.Font = new Font("Arial", 10, FontStyle.Bold);
+                    cbPhonePath.Text = phoneActive.name + "/" + "Files";
 
-            }
+                }
 
             lvFiles.MouseClick += listView_MouseClick;
 
-        }
-
-        private void languageMenuItem_Click(object sender, EventArgs e)
-        {
-
-            switch (((ToolStripItem)sender).Name)
-            {
-                case ("españolToolStripMenuItem"):
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo("gl-ES");
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("gl-ES");
-                    break;
-                case ("englishToolStripMenuItem"):
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-                    break;
-            }
-            Controls.Clear();
-            InitializeComponent();
         }
 
         private void listView_MouseClick(object sender, MouseEventArgs e)
@@ -86,11 +70,13 @@ namespace IExplorer
                     cMenuFiles.Show(Cursor.Position);
                 }
             }
-        }
-
-        private void saveDataToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
+            else if(e.Button == MouseButtons.Left)
+            {
+                if (((ListView)sender).FocusedItem.Bounds.Contains(e.Location) == true)
+                {
+                    cbPhonePath.Text = phoneActive.name + "/" + "Files" + "/"+ ((ListView)sender).FocusedItem.Text;
+                }
+            }
         }
 
         private void dragEnter(object sender, DragEventArgs e)
@@ -123,12 +109,56 @@ namespace IExplorer
         {
             if (e.Node.Parent == null)
             {
-                if(phoneActive != phones[e.Node.Index])
+                if (phoneActive != phones[e.Node.Index])
+                {
                     panelRightBottom.Controls.Clear();
-                phoneActive = phones[e.Node.Index];
-                treeNavigator.notify(phoneActive);
-                
+                    phoneActive = phones[e.Node.Index];
+                    treeNavigator.notify(phoneActive);
+                }
+                cbPhonePath.Text = phoneActive.name;
+
             }
+            else
+            {
+                if (phoneActive != phones[e.Node.Parent.Index])
+                {
+                    panelRightBottom.Controls.Clear();
+
+                    phoneActive = phones[e.Node.Parent.Index];
+                    treeNavigator.notify(phoneActive);
+                }
+                cbPhonePath.Text = phoneActive.name + "/" + e.Node.Text;
+            }
+        }
+
+        private void languageItem_Click(object sender, EventArgs e)
+        {
+            switch (((ToolStripItem)sender).Name)
+            {
+                case ("spanishToolStripMenuItem"):
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-ES");
+                    break;
+                case ("englishToolStripMenuItem"):
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    break;
+            }
+            Controls.Clear();
+            treeNavigator.detach(iexplorerDatos);
+            InitializeComponent();
+            treeNavigator.attach(iexplorerDatos);
+
+            foreach (Phone p in phones)
+            {
+                treeNavigator.newNode(p);
+                treeNavigator.notify(p);
+            }
+        }
+
+        private void tvSearch_Click(object sender, EventArgs e)
+        {
+            tvSearch.Text = "";
         }
 
 
